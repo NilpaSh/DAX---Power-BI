@@ -46,64 +46,120 @@ Aggregation
 
 **SUMX**	Returns the sum of an expression evaluated for each row in a table.
 
-Date and Time function	
-CALENDAR	Returns a table with a single column named "Date" that contains a contiguous set of dates.
-CALENDARAUTO	Returns a table with a single column named "Date" that contains a contiguous set of dates.
-DATE	Returns the specified date in datetime format.
-DATEDIFF	Returns the number of interval boundaries between two dates.
-DATEVALUE	Converts a date in the form of text to a date in datetime format.
-DAY	Returns the day of the month, a number from 1 to 31.
-EDATE	Returns the date that is the indicated number of months before or after the start date.
-EOMONTH	Returns the date in datetime format of the last day of the month, before or after a specified number of months.
-HOUR	Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.).
-MINUTE	Returns the minute as a number from 0 to 59, given a date and time value.
-MONTH	Returns the month as a number from 1 (January) to 12 (December).
-NETWORKDAYS	Returns the number of whole workdays between two dates.
-NOW	Returns the current date and time in datetime format.
-QUARTER	Returns the quarter as a number from 1 to 4.
-SECOND	Returns the seconds of a time value, as a number from 0 to 59.
-TIME	Converts hours, minutes, and seconds given as numbers to a time in datetime format.
-TIMEVALUE	Converts a time in text format to a time in datetime format.
-TODAY	Returns the current date.
-UTCNOW	Returns the current UTC date and time
-UTCTODAY	Returns the current UTC date.
-WEEKDAY	Returns a number from 1 to 7 identifying the day of the week of a date.
-WEEKNUM	Returns the week number for the given date and year according to the return_type value.
-YEAR	Returns the year of a date as a four digit integer in the range 1900-9999.
-YEARFRAC	Calculates the fraction of the year represented by the number of whole days between two dates.
-Filter	
-ALL	Returns all the rows in a table, or all the values in a column, ignoring any filters that might have been applied.
-ALLCROSSFILTERED	Clear all filters which are applied to a table.
-ALLEXCEPT	Removes all context filters in the table except filters that have been applied to the specified columns.
-ALLNOBLANKROW	From the parent table of a relationship, returns all rows but the blank row, or all distinct values of a column but the blank row, and disregards any context filters that might exist.
-ALLSELECTED	Removes context filters from columns and rows in the current query, while retaining all other context filters or explicit filters.
-CALCULATE	Evaluates an expression in a modified filter context.
-CALCULATETABLE	Evaluates a table expression in a modified filter context.
-EARLIER	Returns the current value of the specified column in an outer evaluation pass of the mentioned column.
-EARLIEST	Returns the current value of the specified column in an outer evaluation pass of the specified column.
-FILTER	Returns a table that represents a subset of another table or expression.
-FIRST	Used in visual calculations only. Retrieves a value in the visual matrix from the first row of an axis.
-INDEX	Returns a row at an absolute position, specified by the position parameter, within the specified partition, sorted by the specified order or on the specified axis.
-KEEPFILTERS	Modifies how filters are applied while evaluating a CALCULATE or CALCULATETABLE function.
-LAST	Used in visual calculations only. Retrieves a value in the visual matrix from the last row of an axis.
-LOOKUP	In visual calculation mode only. Look up the value when filters applied.
-LOOKUPWITHTOTALS	In visual calculation mode only. Look up the value when filters applied. Filters not specified will not be inferred.
-LOOKUPVALUE	Returns the value for the row that meets all criteria specified by search conditions. The function can apply one or more search conditions.
-MATCHBY	In window functions, defines the columns that are used to determine how to match data and identify the current row.
-MOVINGAVERAGE	Returns a moving average calculated along the given axis of the visual matrix.
-NEXT	Used in visual calculations only. Retrieves a value in the next row of an axis in the visual matrix.
-OFFSET	Returns a single row that is positioned either before or after the current row within the same table, by a given offset.
-ORDERBY	Defines the columns that determine the sort order within each of a window function’s partitions.
-PARTITIONBY	Defines the columns that are used to partition a window function’s relation parameter.
-PREVIOUS	Used in visual calculations only. Retrieves a value in the previous row of an axis in the visual matrix.
-RANGE	Returns an interval of rows within the given axis, relative to the current row. A shortcut for WINDOW.
-RANK	Returns the ranking of a row within the given interval.
-REMOVEFILTERS	Clears filters from the specified tables or columns.
-ROWNUMBER	Returns the unique ranking of a row within the given interval.
-RUNNINGSUM	Returns a running sum calculated along the given axis of the visual matrix.
-SELECTEDVALUE	Returns the value when the context for columnName has been filtered down to one distinct value only. Otherwise returns alternateResult.
-WINDOW	Returns multiple rows which are positioned within the given interval.
-Financial	
+**Date and Time function**
+
+**CALENDAR**	Returns a table with a single column named "Date" that contains a contiguous set of dates.
+
+**CALENDARAUTO**	Returns a table with a single column named "Date" that contains a contiguous set of dates.
+
+**DATE**	Returns the specified date in datetime format.
+
+**DATEDIFF**	Returns the number of interval boundaries between two dates.
+
+**DATEVALUE**	Converts a date in the form of text to a date in datetime format.
+
+**DAY**	Returns the day of the month, a number from 1 to 31.
+
+**EDATE**	Returns the date that is the indicated number of months before or after the start date.
+
+**EOMONTH**	Returns the date in datetime format of the last day of the month, before or after a specified number of months.
+
+**HOUR**	Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.).
+
+**MINUTE**	Returns the minute as a number from 0 to 59, given a date and time value.
+
+**MONTH**	Returns the month as a number from 1 (January) to 12 (December).
+
+**NETWORKDAYS**	Returns the number of whole workdays between two dates.
+
+**NOW**	Returns the current date and time in datetime format.
+
+**QUARTER**	Returns the quarter as a number from 1 to 4.
+
+**SECOND**	Returns the seconds of a time value, as a number from 0 to 59.
+
+**TIME**	Converts hours, minutes, and seconds given as numbers to a time in datetime format.
+
+**TIMEVALUE**	Converts a time in text format to a time in datetime format.
+
+**TODAY**	Returns the current date.
+
+**UTCNOW**	Returns the current UTC date and time
+
+**UTCTODAY**	Returns the current UTC date.
+
+**WEEKDAY**	Returns a number from 1 to 7 identifying the day of the week of a date.
+
+**WEEKNUM**	Returns the week number for the given date and year according to the return_type value.
+
+**YEAR**	Returns the year of a date as a four digit integer in the range 1900-9999.
+
+**YEARFRAC**	Calculates the fraction of the year represented by the number of whole days between two dates.
+
+**Filter**	
+**ALL**	Returns all the rows in a table, or all the values in a column, ignoring any filters that might have been applied.
+
+**ALLCROSSFILTERED**	Clear all filters which are applied to a table.
+
+**ALLEXCEPT**	Removes all context filters in the table except filters that have been applied to the specified columns.
+
+**ALLNOBLANKROW**	From the parent table of a relationship, returns all rows but the blank row, or all distinct values of a column but the blank row, and disregards any context filters that might exist.
+
+**ALLSELECTED**	Removes context filters from columns and rows in the current query, while retaining all other context filters or explicit filters.
+
+**CALCULATE**	Evaluates an expression in a modified filter context.
+
+**CALCULATETABLE**	Evaluates a table expression in a modified filter context.
+
+**EARLIER**	Returns the current value of the specified column in an outer evaluation pass of the mentioned column.
+
+**EARLIEST**	Returns the current value of the specified column in an outer evaluation pass of the specified column.
+
+**FILTER**	Returns a table that represents a subset of another table or expression.
+
+**FIRST**	Used in visual calculations only. Retrieves a value in the visual matrix from the first row of an axis.
+
+**INDEX**	Returns a row at an absolute position, specified by the position parameter, within the specified partition, sorted by the specified order or on the specified axis.
+
+**KEEPFILTERS**	Modifies how filters are applied while evaluating a CALCULATE or CALCULATETABLE function.
+
+**LAST**	Used in visual calculations only. Retrieves a value in the visual matrix from the last row of an axis.
+
+**LOOKUP**	In visual calculation mode only. Look up the value when filters applied.
+
+**LOOKUPWITHTOTALS**	In visual calculation mode only. Look up the value when filters applied. Filters not specified will not be inferred.
+
+**LOOKUPVALUE**	Returns the value for the row that meets all criteria specified by search conditions. The function can apply one or more search conditions.
+
+**MATCHBY**	In window functions, defines the columns that are used to determine how to match data and identify the current row.
+
+**MOVINGAVERAGE**	Returns a moving average calculated along the given axis of the visual matrix.
+
+**NEXT**	Used in visual calculations only. Retrieves a value in the next row of an axis in the visual matrix.
+
+**OFFSET**	Returns a single row that is positioned either before or after the current row within the same table, by a given offset.
+
+**ORDERBY**	Defines the columns that determine the sort order within each of a window function’s partitions.
+
+**PARTITIONBY**	Defines the columns that are used to partition a window function’s relation parameter.
+
+**PREVIOUS**	Used in visual calculations only. Retrieves a value in the previous row of an axis in the visual matrix.
+
+**RANGE**	Returns an interval of rows within the given axis, relative to the current row. A shortcut for WINDOW.
+
+**RANK**	Returns the ranking of a row within the given interval.
+
+**REMOVEFILTERS**	Clears filters from the specified tables or columns.
+
+**ROWNUMBER**	Returns the unique ranking of a row within the given interval.
+
+**RUNNINGSUM**	Returns a running sum calculated along the given axis of the visual matrix.
+
+**SELECTEDVALUE**	Returns the value when the context for columnName has been filtered down to one distinct value only. Otherwise returns alternateResult.
+
+**WINDOW**	Returns multiple rows which are positioned within the given interval.
+
+**Financial**	
 ACCRINT	Returns the accrued interest for a security that pays periodic interest.
 ACCRINTM	Returns the accrued interest for a security that pays interest at maturity.
 AMORDEGRC	Returns the depreciation for each accounting period. Similar to AMORLINC, except a depreciation coefficient is applied depending on the life of the assets.
