@@ -1,6 +1,6 @@
 # DAX---Power-BI
 
-Aggregation	
+**Aggregation**	
 
 **APPROXIMATEDISTINCTCOUNT**	Returns an estimated count of unique values in a column.
 
