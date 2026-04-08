@@ -160,30 +160,55 @@
 **WINDOW**	Returns multiple rows which are positioned within the given interval.
 
 **Financial**	
-ACCRINT	Returns the accrued interest for a security that pays periodic interest.
-ACCRINTM	Returns the accrued interest for a security that pays interest at maturity.
-AMORDEGRC	Returns the depreciation for each accounting period. Similar to AMORLINC, except a depreciation coefficient is applied depending on the life of the assets.
-AMORLINC	Returns the depreciation for each accounting period.
-COUPDAYBS	Returns the number of days from the beginning of a coupon period until its settlement date.
-COUPDAYS	Returns the number of days in the coupon period that contains the settlement date.
-COUPDAYSNC	Returns the number of days from the settlement date to the next coupon date.
-COUPNCD	Returns the next coupon date after the settlement date.
-COUPNUM	Returns the number of coupons payable between the settlement date and maturity date, rounded up to the nearest whole coupon.
-COUPPCD	Returns the previous coupon date before the settlement date.
-CUMIPMT	Returns the cumulative interest paid on a loan between start_period and end_period.
-CUMPRINC	Returns the cumulative principal paid on a loan between start_period and end_period.
-DB	Returns the depreciation of an asset for a specified period using the fixed-declining balance method.
-DDB	Returns the depreciation of an asset for a specified period using the double-declining balance method or some other method you specify.
-DISC	Returns the discount rate for a security.
-DOLLARDE	Converts a dollar price expressed as an integer part and a fraction part, such as 1.02, into a dollar price expressed as a decimal number.
-DOLLARFR	Converts a dollar price expressed as an integer part and a fraction part, such as 1.02, into a dollar price expressed as a decimal number.
-DURATION	Returns the Macauley duration for an assumed par value of $100.
-EFFECT	Returns the effective annual interest rate, given the nominal annual interest rate and the number of compounding periods per year.
-FV	Calculates the future value of an investment based on a constant interest rate.
-INTRATE	Returns the interest rate for a fully invested security.
-IPMT	Returns the interest payment for a given period for an investment based on periodic, constant payments and a constant interest rate.
-ISPMT	Calculates the interest paid (or received) for the specified period of a loan (or investment) with even principal payments.
-MDURATION	Returns the modified Macauley duration for a security with an assumed par value of $100.
+**ACCRINT**	Returns the accrued interest for a security that pays periodic interest.
+
+**ACCRINTM**	Returns the accrued interest for a security that pays interest at maturity.
+
+**AMORDEGRC**	Returns the depreciation for each accounting period. Similar to AMORLINC, except a depreciation coefficient is 
+applied depending on the life of the assets.
+
+**AMORLINC**	Returns the depreciation for each accounting period.
+
+**COUPDAYBS**	Returns the number of days from the beginning of a coupon period until its settlement date.
+
+**COUPDAYS**	Returns the number of days in the coupon period that contains the settlement date.
+
+**COUPDAYSNC**	Returns the number of days from the settlement date to the next coupon date.
+
+**COUPNCD**	Returns the next coupon date after the settlement date.
+
+**COUPNUM**	Returns the number of coupons payable between the settlement date and maturity date, rounded up to the nearest whole coupon.
+
+**COUPPCD**	Returns the previous coupon date before the settlement date.
+
+**CUMIPMT**	Returns the cumulative interest paid on a loan between start_period and end_period.
+
+**CUMPRINC**	Returns the cumulative principal paid on a loan between start_period and end_period.
+
+**DB**	Returns the depreciation of an asset for a specified period using the fixed-declining balance method.
+
+**DDB**	Returns the depreciation of an asset for a specified period using the double-declining balance method or some other method you specify.
+
+**DISC**	Returns the discount rate for a security.
+
+**DOLLARDE**	Converts a dollar price expressed as an integer part and a fraction part, such as 1.02, into a dollar price expressed as a decimal number.
+
+**DOLLARFR**	Converts a dollar price expressed as an integer part and a fraction part, such as 1.02, into a dollar price expressed as a decimal number.
+
+**DURATION**	Returns the Macauley duration for an assumed par value of $100.
+
+**EFFECT**	Returns the effective annual interest rate, given the nominal annual interest rate and the number of compounding periods per year.
+
+**FV**	Calculates the future value of an investment based on a constant interest rate.
+
+**INTRATE**	Returns the interest rate for a fully invested security.
+
+**IPMT**	Returns the interest payment for a given period for an investment based on periodic, constant payments and a constant interest rate.
+
+**ISPMT**	Calculates the interest paid (or received) for the specified period of a loan (or investment) with even principal payments.
+
+**MDURATION**	Returns the modified Macauley duration for a security with an assumed par value of $100.
+
 NOMINAL	Returns the nominal annual interest rate, given the effective rate and the number of compounding periods per year.
 NPER	Returns the number of periods for an investment based on periodic, constant payments and a constant interest rate.
 ODDFPRICE	Returns the price per $100 face value of a security having an odd (short or long) first period.
